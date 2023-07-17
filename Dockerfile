@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.6.2-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.8.0-devel-ubuntu20.04
 
 # given by builder
 ARG PIP_TAG
