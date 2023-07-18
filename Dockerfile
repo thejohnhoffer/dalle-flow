@@ -40,7 +40,7 @@ RUN if [ -n "${APT_PACKAGES}" ]; then apt-get update && apt-get install --no-ins
     pip install --upgrade cython && \
     pip install --upgrade pyyaml && \
     git clone --depth=1 https://github.com/timojl/clipseg.git && \
-    pip install jax[cuda11_cudnn82]~=0.3.24 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && \
+    pip install jax[cuda11_cudnn82]~=0.3.25 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && \
     pip uninstall -y torch torchvision torchaudio && \
     pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 && \
     pip install PyYAML numpy tqdm pytorch_lightning einops numpy omegaconf && \
