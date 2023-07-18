@@ -1,5 +1,5 @@
 # jina-related
-jina==3.8.3
+jina==3.19.0
 docarray>=0.16.2,<0.30.0
 # dalle-mini
 flax==0.6.3
