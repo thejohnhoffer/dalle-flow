@@ -42,12 +42,12 @@ RUN if [ -n "${APT_PACKAGES}" ]; then apt-get update && apt-get install --no-ins
     git clone --depth=1 https://github.com/timojl/clipseg.git && \
     pip install jax[cuda11_cudnn82]~=0.3.25 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && \
     pip uninstall -y torch torchvision torchaudio && \
-    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 && \
+    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118 && \
     pip install PyYAML numpy tqdm pytorch_lightning einops numpy omegaconf && \
     pip install https://github.com/crowsonkb/k-diffusion/archive/master.zip && \
     pip install basicsr facexlib gfpgan && \
     pip install realesrgan && \
-    pip install https://github.com/AmericanPresidentJimmyCarter/xformers-builds/raw/master/cu116/xformers-0.0.14.dev0-cp310-cp310-linux_x86_64.whl && \
+    pip install xformers && \
     cd latent-diffusion && pip install --timeout=1000 -e . && cd - && \
     cd glid-3-xl && pip install --timeout=1000 -e . && cd - && \
     cd dalle-flow && pip install --timeout=1000 --compile -r requirements.txt && cd - && \
