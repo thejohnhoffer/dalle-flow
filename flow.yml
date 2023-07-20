@@ -4,7 +4,7 @@ with:
   port: 51005
   monitoring: true  # enable prometheus & grafana
   env:
-    JINA_LOG_LEVEL: debug
+    JINA_LOG_LEVEL: debug 
 executors:
   - name: dalle
     uses: executors/dalle/config.yml

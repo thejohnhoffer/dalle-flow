@@ -149,6 +149,8 @@ class ClipSegmentation(Executor):
         with torch.no_grad():
             for doc in docs:
                 prompts = [doc.text]
+                self.logger.info('prompts')
+                self.logger.info(doc.text)
                 image_in = self.document_to_pil(doc)
                 image_in = image_in.convert('RGB')
                 image_unsqueezed = self.transformation(image_in).unsqueeze(0)
