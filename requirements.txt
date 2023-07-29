@@ -6,9 +6,9 @@ flax
 git+https://github.com/openai/CLIP.git
 git+https://github.com/huggingface/transformers.git
 git+https://github.com/patil-suraj/vqgan-jax.git
-git+https://github.com/thejohnhoffer/dalle-mini.git
+git+https://github.com/borisdayma/dalle-mini.git
 # glid3
-dalle_pytorch>=1.6.6
+dalle_pytorch
 # SwinIR
 opencv-python
 timm
