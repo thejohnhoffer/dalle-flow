@@ -2,7 +2,7 @@
 jina==3.19.0
 docarray>=0.16.2,<0.30.0
 # dalle-mini
-flax==0.6.3
+flax
 git+https://github.com/openai/CLIP.git
 git+https://github.com/huggingface/transformers.git
 git+https://github.com/patil-suraj/vqgan-jax.git
